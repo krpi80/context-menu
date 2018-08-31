@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="contextMenu.css">
+		
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="contextMenu.min.js"></script>
+		<script type="text/javascript">
+	var menu1 = [{
+        name: 'create',
+        title: 'create button',
+        fun: function () {
+            alert('i am add button')
+        }
+    }, {
+        name: 'update',
+        title: 'update button',
+        fun: function () {
+            alert('i am update button')
+        }
+    }, {
+        name: 'delete',
+        title: 'delete button',
+        fun: function () {
+            alert('i am delete button')
+        }
+    }]; 
+    var menu2 = [{
+        name: 'create',
+        title: 'create button',
+        fun: function () {
+            alert('i am add button')
+        }
+    }, {
+        name: 'delete',
+        title: 'delete button',
+        fun: function () {
+            alert('i am delete button')
+        }
+    }]; 
+		</script>
+	</head>
+	<body>
+		<br />	
+		<br />	
+		<br />	
+		<br />	
+		
+		<a href="javascript:void()" class="testButton1">test1</a>
+		<br />	
+		<br />	
+		
+		<a href="javascript:void()" class="testButton2">test2</a>
+		
+		<script type="text/javascript">
+		  $('.testButton1').contextMenu(menu1);
+		  $('.testButton2').contextMenu(menu2);
+		</script>
+	</body>
+</html>
